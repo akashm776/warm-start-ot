@@ -1,0 +1,37 @@
+[project]
+name = "warmstart-ot"
+version = "0.1.0"
+description = "Warm-start algorithms for additive-approximate optimal transport and bipartite matching"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Akash Mittal" }]
+keywords = ["optimal-transport", "bipartite-matching", "warm-start", "gabow-tarjan", "lmr"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "jpype1>=1.5",
+    "matplotlib>=3.7",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["warmstart_ot"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
