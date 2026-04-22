@@ -3,7 +3,7 @@
 Reference implementation of the warm-start scaling algorithm from:
 
 > **Warm Start Algorithms for Bipartite Matching and Optimal Transport.**
-> Akash Mittal. M.S. Thesis, Virginia Tech, December 2024.
+> Akash Mittal. M.S. Thesis, Virginia Tech, December 2024 [thesis]
 
 The warm-start algorithm wraps the LMR additive-approximate OT solver of
 [Lahn, Mulchandani, and Raghvendra (NeurIPS 2019)][lmr-paper]: dual weights
@@ -58,6 +58,7 @@ thesis's author.
 
 [lmr-paper]: https://arxiv.org/abs/1905.11830
 [lmr-code]: https://github.com/nathaniellahn/CombinatorialOptimalTransport
+[thesis]: https://vtechworks.lib.vt.edu/server/api/core/bitstreams/80e1b0c7-9485-4275-b07b-60009a5c5db3/content
 
 ## License
 
